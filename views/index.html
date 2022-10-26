@@ -21,7 +21,23 @@
                 <a href="#gallery" class="hover:text-orange-500">Gallery</a>
                 <a href="#contact" class=" hover:text-orange-500">Contact Us</a>
             </div>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 bg-white left-6 right-6 drop-shadow-md sm:w-auto sm:self-center sm:display-none">
+            <a href="#about" class="hover:text-orange-500">About Us</a>
+            <a href="#services" class="hover:text-orange-500">Services</a>
+            <a href="#gallery" class="hover:text-orange-500">Gallery</a>
+            <a href="#contact" class=" hover:text-orange-500">Contact Us</a>
+        </div>
+
     </nav>
 
     <!-- Hero section -->
@@ -298,6 +314,8 @@
         </div>
 
     </footer>
+
+    <script src="../dist/script.js"></script>
 
 </body>
 </html>
