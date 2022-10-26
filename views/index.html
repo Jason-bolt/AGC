@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../dist/output.css">
     <title>Document</title>
 </head>
@@ -15,10 +16,10 @@
                 AGC
             </h1>
             <div class="hidden space-x-8 md:flex">
-                <a href="#about" class="hover:text-orange-500">About</a>
+                <a href="#about" class="hover:text-orange-500">About Us</a>
                 <a href="#services" class="hover:text-orange-500">Services</a>
                 <a href="#gallery" class="hover:text-orange-500">Gallery</a>
-                <a href="#contact" class=" hover:text-orange-500">Contact us</a>
+                <a href="#contact" class=" hover:text-orange-500">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -52,7 +53,7 @@
         <div class="container mx-auto px-6 mt-20 text-center md:text-left">
             <div class="flex">
                 <h1 class="bg-orange-500 text-white text-2xl px-10 py-2 rounded-r-full pr-28">
-                    About
+                    About Us
                 </h1>
             </div>
             <p class="mt-5 md:px-32">
@@ -149,13 +150,154 @@
                     Gallery
                 </h1>
             </div>
-            <div class="grid grid-cols-4 gap-4 mt-14">
+
+            <div class="mt-10">
+                <h1 class="text-orange-500 text-3xl font-semibold">
+                    Cleaning
+                </h1>
+            </div>
+
+            <!-- Cleaning -->
+            <div class="grid grid-cols-4 gap-4 mt-7">
                 <div class="hover:scale-150">
-                    <img src="../images/cleaning.png" alt="">
+                    <img src="../images/gallery-cleaning1.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-cleaning2.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-cleaning3.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-cleaning4.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-cleaning5.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-cleaning6.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-cleaning7.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-cleaning8.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-cleaning9.jpg" alt="">
+                </div>
+            </div>
+            
+
+            <div class="mt-20">
+                <h1 class="text-orange-500 text-3xl font-semibold">
+                    Beads
+                </h1>
+            </div>
+
+            <!-- Beads -->
+            <div class="grid grid-cols-4 gap-4 mt-7">
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-beads1.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-beads2.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-beads3.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-beads4.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-beads5.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-beads6.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-beads7.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-beads.jpg" alt="">
+                </div>
+                <div class="hover:scale-150">
+                    <img src="../images/gallery-beads9.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="bg-orange-500 py-10 mt-36">
+        <div class="container mx-auto px-6 pt-2">
+            <div class="flex items-center justify-center">
+                <h1 class="text-white font-bold text-4xl px-20">
+                    Contact Us
+                </h1>
+            </div>
+            
+
+            <div class="my-10 md:px-48">
+                <form action="#" class="shadow-xl rounded-lg p-10 bg-white">
+
+                    <!-- Name -->
+                    <div class="flex flex-col items-center justify-evenly space-y-3 md:flex-row md:space-x-5 md:space-y-0">
+                        <input type="text" class="rounded-full md:w-1/2" name="first_name" id="first_name" placeholder="First Name">
+                        <input type="text" class="rounded-full md:w-1/2" name="last_name" id="last_name" placeholder="Last Name">
+                    </div>
+
+                    <!-- Email, service -->
+                    <div class="flex flex-col items-center justify-evenly space-y-3 mt-5 md:flex-row md:space-x-5 md:space-y-0">
+                        <input type="email" class="rounded-full md:w-1/2" name="email" id="email" placeholder="Email">
+                        <select name="service" id="service" class="rounded-full md:w-1/2">
+                            <option disabled selected>Choose service</option>
+                            <option value="cleaning">Cleaning</option>
+                            <option value="beads">Beads</option>
+                            <option value="development">Web development</option>
+                        </select>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="flex items-center justify-center mt-5">
+                        <textarea name="description" id="description" rows="10" class="rounded-md flex-auto" placeholder="Describe the service you are looking for..."></textarea>
+                    </div>
+
+                    <div class="flex items-center justify-center mt-7">
+                        <button class="py-3 px-10 bg-orange-500 text-white rounded-full">
+                            Submit <i class="bi bi-send-fill"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-gray-800">
+        <div class="container mx-auto px-6 pt-20 pb-5 flex space-y-5 flex-col items-center justify-between md:flex-row md:space-x-5 md:space-y-0">
+            <!-- brand -->
+            <div class="flex flex-col text-center space-y-3 text-orange-500">
+                <h1 class="text-7xl font-extrabold">
+                    AGC
+                </h1>
+                <p><i>Your best bet for quality service!</i></p>
+            </div>
+            
+            <!-- Menu -->
+            <div class="flex flex-row space-x-3 text-white">
+                <a href="#about" class="hover:text-orange-500">About Us</a>
+                <a href="#services" class="hover:text-orange-500">Services</a>
+                <a href="#gallery" class="hover:text-orange-500">Gallery</a>
+                <a href="#contact" class=" hover:text-orange-500">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 pb-5 flex items-center justify-center text-white">
+            <p>Copyright &copy; 2022 All rights reserved</p>
+        </div>
+
+    </footer>
 
 </body>
 </html>
